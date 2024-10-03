@@ -1,40 +1,90 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.logo{
+
+.logo {
     width: 150px;
 }
-#pagina-home{
-    height:630px ;
-    background: linear-gradient(rgba(17,17,15,0.404), rgba(34, 30, 4, 0.685)), url(../img/banner.png);
+
+#pagina-home {
+    height: 630px;
+    background: linear-gradient(rgba(17, 17, 15, 0.404), rgba(34, 30, 4, 0.685)), url(../img/banner.png);
     background-size: cover;
 }
 
-.menu-principal ul li{
+.menu-principal ul li {
     display: inline-block;
 }
-.menu-principal ul li a{
+
+/* tira a linha azul do link  */
+.menu-principal ul {
+    list-style: none;
+}
+
+/* usado  para  remover os marcadores padroes de lista */
+.menu-principal ul li a {
     color: white;
     text-decoration: none;
+    /* remove o sublinhado  padrao de links ,deixando-os mais limpos  */
     text-transform: uppercase;
+    /* uppercase - coverte para maiusculo
+    lowercase - coverte tudo  para minusculo 
+    none- remove qualquer transformaçao */
     padding: 5px 20px;
     border: 1px solid transparent;
+    /* define uma borda invisivel ao redor do link .isso pode ser util para evitar mudanças 
+    de layout ao passar  o mouse ,ja que a borda aparece durante a intevencao  */
     transition: 0.06s ease;
+    /* define a transicao suave para as propriedades que mudam (com cor ou  fundo),que ocorrera em 0,06 segundos .isso cria  um efeito visual durante a interacao */
 }
-.menu-principal ul li a:hover{
+
+.menu-principal ul li a:hover {
     background-color: white;
     color: black;
 }
-.menu-principal ul li .link-ativo{
+
+.menu-principal ul li .link-ativo {
     background: white;
-    color:black;
+    color: black;
 }
-.categoria{
+
+.categoria {
     display: flex;
-    /* hsbilita a funçao de alinhamento e espaçamento */
+    /* habilita a funçao de alinhamento e espaçamento */
     align-items: center;
     justify-content: space-between;
 }
-
+h1{
+    font-size: 70px;
+    color: white;
+    margin: 30px;
+}
+.btn{
+    border: 1px solid white;
+    padding:10px 80px;
+    color: white;
+    text-decoration: none;
+    transition: 0.6s ease;
+    margin: 10px;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.conteudo_banner{
+    height: 438px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+/* row:organiza os itens horizontalmente, de de esquerda para a direita 
+row-reverse: organiza os itens horizontalmente ,da direita para esuqerda 
+column-reverse:organiza os itens verticalmente, de baixo para cima
+column:organiza os itens verticalmente,de cima para baixo */
+.imagens{
+    width: 314px;
+    height: 368px;
+}
